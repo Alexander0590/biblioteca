@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+  }
+
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .sidebar {
+    height: 100vh;
+    background-color: #023e8a;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeSlideIn 1s ease;
+    overflow-y: hidden; /* Oculta la barra de desplazamiento inicialmente */
+  }
+
+  .sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .sidebar .logo img {
+    width: 120px;
+    animation: fadeSlideIn 1s ease;
+  }
+
+  .nav-link {
+    color: #ffffffcc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background-color: #0077b6;
+    color: white;
+    transform: translateX(5px);
+  }
+
+  .submenu {
+    padding-left: 20px;
+    display: none;
+    animation: fadeSlideIn 0.5s ease;
+  }
+
+  .submenu .nav-link {
+    font-size: 0.95rem;
+    background-color: #014f86;
+  }
+
+  .submenu .nav-link:hover {
+    background-color: #0096c7;
+  }
+
+  .rotate {
+    transition: transform 0.3s ease;
+  }
+
+  .rotate.down {
+    transform: rotate(90deg);
+  }
+
+  .main-content {
+    margin-left: 270px;
+    padding: 40px;
+    animation: fadeSlideIn 1s ease;
+  }
+
+  .user-info {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff44;
+    animation: fadeSlideIn 1.5s ease;
+  }
+
+  .user-info img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+  }
+
+  .user-info img:hover {
+    transform: scale(1.05);
+  }
+
+  .user-info p {
+    margin: 0;
+    color: #ffffffcc;
+  }
+
+  .user-info a {
+    font-size: 0.9rem;
+    color: #ffffffaa;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+  }
+
+  .user-info a:hover {
+    color: #ffffff;
+  }
+
+  .sidebar {
+    overflow-y: hidden;
+  }
+
+  .sidebar:hover {
+    overflow-y: auto;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

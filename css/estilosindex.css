@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .login-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  .login-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #023e8a;
+  }
+  .form-control {
+    border-radius: 10px;
+  }
+  .btn-login {
+    border-radius: 10px;
+    background-color: #023e8a;
+    border: none;
+  }
+  .btn-login:hover {
+    background-color: #0077b6;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #img1 {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
